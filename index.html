@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="text-center mt-3">Todo App</h1>
+    <div class="d-flex justify-content-center mt-3">
+        <form class="w-50 d-flex js-form">
+            <input class="form-control js-input" type="text" required>
+            <button class="formBtn btn btn-success ms-2" type="submit">Create</button>
+        </form>
+    </div>
+
+    <div class="d-flex justify-content-center mt-3">
+        <ul class="js-list list-unstyled w-50 list-group"></ul>
+    </div>
+    <template class="todo-Template">
+        <li class="d-flex border border-light-subtle m-1 p-1 align-items-center">
+            <input class="form-check-input me-2 checkInput" type="checkbox">
+            <span class="todoText"></span>
+            <div class="ms-auto">
+                <button class="btn btn-success btn-edit">Edit</button>
+                <button class="btn btn-danger ms-2 btn-delete">Delete</button>
+            </div>
+        </li>
+    </template>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="./js/utilits.js"></script>
+    <script src="./js/js.js"></script>
+</body>
+</html>
